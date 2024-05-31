@@ -1,0 +1,20 @@
+#################################################################
+################## IDT_L1_LIB VERSION TRACKING ##################
+#################################################################
+
+------------------ Version 0.1 (Nitipat C.) ------------------
+	- Create Code for the OOP structure
+	- Initial code to the library for best practices [.cpp (interface) and .h (header)]
+	- Create class Motor, Sensors, WARC (Web Application Robot Controller), WifiConfig
+	- Create l1_main.ino for the main function to run the code
+	- Test Verify and Upload to AGV (L1)
+	- Release to team member (Tareerat P.)
+
+------------------ Version 0.2 (Tareerat P.) ------------------
+	- Move Motor.cpp and sensor.cpp to example folder (for head coach suggestion)
+	- Move void processCarMovement() from Motor.cpp to WARC.cpp
+	- Remove processCarMovement() from Sensor::ultraConllisionCheck() for using Motor::forward and Motor::backward
+
+------------------ Version 0.3 (Tareerat P.) ------------------
+        - Add abs() function to Sensors::ultraMicrosecondsToCentimeters Sensor.cpp 
+        - Change condition Sensors::ultraCollisionCheck() distance != 0 to distance > 0
